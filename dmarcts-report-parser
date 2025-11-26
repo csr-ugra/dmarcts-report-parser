@@ -1,0 +1,8 @@
+/log/dmarcts-report-parser.log {
+    daily
+    rotate 7
+    missingok
+    notifempty
+    delaycompress
+    copytruncate
+}

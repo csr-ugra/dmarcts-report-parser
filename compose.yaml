@@ -1,0 +1,11 @@
+services:
+  dmarc:
+    image: dmarcts-report-parser:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./dmarcts-report-parser.conf:/app/dmarcts-report-parser.conf:ro
+      - ./logs:/logs
+    environment:
+      - TZ=Asia/Yekaterinburg
